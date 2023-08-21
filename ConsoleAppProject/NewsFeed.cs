@@ -20,14 +20,16 @@ namespace ConsoleAppProject.App04
     ///</author> 
     public class NewsFeed
     {
-        private readonly List<Post> posts;
+        private readonly List<MessagePost> messages;
+        private readonly List<PhotoPost> photos;
 
         ///<summary>
         /// Construct an empty news feed.
         ///</summary>
         public NewsFeed()
         {
-            posts = new List<Post>();
+            messages = new List<MessagePost>();
+            photos = new List<PhotoPost>();
         }
 
 
@@ -38,7 +40,7 @@ namespace ConsoleAppProject.App04
         ///</summary>
         public void AddMessagePost(MessagePost message)
         {
-            posts.Add(message);
+            messages.Add(message);
         }
 
         ///<summary>
@@ -48,7 +50,7 @@ namespace ConsoleAppProject.App04
         ///</summary>
         public void AddPhotoPost(PhotoPost photo)
         {
-            posts.Add(photo);
+            photos.Add(photo);
         }
 
         ///<summary>
@@ -58,9 +60,16 @@ namespace ConsoleAppProject.App04
         public void Display()
         {
             // display all text posts
-            foreach (Post post in posts)
+            foreach (MessagePost message in messages)
             {
-                post.Display();
+                message.Display();
+                Console.WriteLine();   // empty line between posts
+            }
+
+            // display all photos
+            foreach (PhotoPost photo in photos)
+            {
+                photo.Display();
                 Console.WriteLine();   // empty line between posts
             }
         }
