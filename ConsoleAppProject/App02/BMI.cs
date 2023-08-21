@@ -22,6 +22,27 @@ namespace ConsoleAppProject.App02
             double bmi = weight/(height*height);
 
             Console.WriteLine($"Your BMI is: {bmi}");
+
+            string weightStatus = "";
+
+            if(bmi < 18.5)
+            {
+                weightStatus = "Underweight";
+            }
+            else if(bmi < 24.9)
+            {
+                weightStatus = "Normal Weight";
+            }
+            else if(bmi < 29.9)
+            {
+                weightStatus = "Overweight";
+            }
+            else
+            {
+                weightStatus = "Obese";
+            }
+
+            Console.WriteLine($"Your weight status according to WHO > {weightStatus}");
         }
     }
 }
