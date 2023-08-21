@@ -55,7 +55,10 @@ namespace ConsoleAppProject.App02
                 return;
             }
 
+
+
             double bmi = weight/(height*height);
+
 
             Console.WriteLine($"Your BMI is: {bmi}");
 
@@ -64,26 +67,36 @@ namespace ConsoleAppProject.App02
             if(bmi < 18.5)
             {
                 weightStatus = "Underweight";
+                Console.Write("BAME individuals with a BMI below 18.5 may face increased risks of malnutrition and other health complications");
             }
             else if(bmi < 24.9)
             {
                 weightStatus = "Normal Weight";
+                Console.Write("BAME individuals with a BMI of 25 or above may face increased risks of obesity-related health conditions.");
             }
             else if(bmi < 29.9)
             {
                 weightStatus = "Overweight";
+                Console.Write("BAME individuals with a BMI of 25 or above may face increased risks of obesity-related health conditions.");
+
             }
             else if(bmi < 34.9)
             {
                 weightStatus = "Obese Class 1";
+                Console.Write("BAME individuals with a BMI of 25 or above may face increased risks of obesity-related health conditions.");
+
             }
             else if(bmi < 39.9)
             {
                 weightStatus = "Obese Class 2";
+                Console.Write("BAME individuals with a BMI of 25 or above may face increased risks of obesity-related health conditions.");
+
             }
             else
             {
                 weightStatus = "Obese Class 3";
+                Console.Write("BAME individuals with a BMI of 25 or above may face increased risks of obesity-related health conditions.");
+
             }
 
             Console.WriteLine($"Your weight status according to WHO > {weightStatus}");
