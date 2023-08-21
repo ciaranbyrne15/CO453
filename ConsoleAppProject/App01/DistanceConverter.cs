@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace ConsoleAppProject.App01
 {
@@ -8,7 +9,108 @@ namespace ConsoleAppProject.App01
     /// <author>
     /// Ciaran Byrne version 0.1
     /// </author>
+    [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public class DistanceConverter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     {
         public const int FEET_IN_MILES = 5280;
         public const double METRES_IN_MILES = 1609.34;
@@ -166,7 +268,12 @@ namespace ConsoleAppProject.App01
         private void OutputMetres()
         {
             Console.WriteLine(miles + "miles is " + metres + "metres")
-        }            
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
+        }
     }  
 
 }
