@@ -37,9 +37,17 @@ namespace ConsoleAppProject.App02
             {
                 weightStatus = "Overweight";
             }
+            else if(bmi < 34.9)
+            {
+                weightStatus = "Obese Class 1";
+            }
+            else if(bmi < 39.9)
+            {
+                weightStatus = "Obese Class 2";
+            }
             else
             {
-                weightStatus = "Obese";
+                weightStatus = "Obese Class 3";
             }
 
             Console.WriteLine($"Your weight status according to WHO > {weightStatus}");
