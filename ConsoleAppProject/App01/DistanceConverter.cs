@@ -23,6 +23,9 @@ namespace ConsoleAppProject.App01
         public static void Main(string[]args)
         {   
             Console.WriteLine("Welcome to the Distance Converter");
+            Console.WriteLine("**********");
+            Console.WriteLine("By Ciaran Byrne");
+            Console.WriteLine("**********");
             Console.WriteLine("Please enter the distance > ");
             double miles = Convert.ToDouble(Console.ReadLine());
 
