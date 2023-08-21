@@ -3,9 +3,11 @@ namespace ConsoleAppProject.App02
 {
     /// <summary>
     /// Please describe the main features of this App
-    /// </summary>
+    /// This app is a BMI Calculator. Its main features include asking the user what units they want to calculate their BMI in, 
+    /// Imperial or Metric. This app also includes an output of what BMI category you are in based on your height and weight,
+    /// as well as alerting BAME community on the risks they could face if their BMI drops too low or rises too high.
     /// <author>
-    /// Student Name version 0.1
+    /// Ciaran Byrne version 0.1
     /// </author>
     public class BMI
     {
